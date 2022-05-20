@@ -1,11 +1,19 @@
+import {
+  Routes,
+  Route,
+  HashRouter
+} from "react-router-dom";
 
-//import './App.css';
+import RegistroContainer from "./containers/registroContainer";
 
 function App() {
+
   return (
-    <div /*className="App"*/>
-      hola soy esme, este es el inicio del login jejej
-    </div>
+    <HashRouter>
+      <Routes>
+          <Route path="/" element={<RegistroContainer/>} />
+        </Routes>
+    </HashRouter>
   );
 }
 
